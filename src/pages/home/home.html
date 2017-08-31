@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Listando dados do json local</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let feed of feeds">
+      {{feed.data.title}}
+    </ion-item>
+  </ion-list>
+</ion-content>
